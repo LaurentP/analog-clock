@@ -1,0 +1,65 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  height: 250px;
+  width: 250px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  background-image: url("../img/clock-dial.png");
+  background-size: 100%;
+}
+
+.hour {
+  position: absolute;
+  z-index: 1;
+  height: 62px;
+  width: 6px;
+  margin: 62px 121px;
+  background-color: #000;
+  border-radius: 5px;
+  transform-origin: bottom;
+}
+
+.minute {
+  position: absolute;
+  z-index: 2;
+  height: 93px;
+  width: 4px;
+  margin: 31px 122px;
+  background-color: #000;
+  border-radius: 3px;
+  transform-origin: bottom;
+}
+
+.second {
+  position: absolute;
+  z-index: 3;
+  height: 118px;
+  width: 2px;
+  margin: 6px 123px;
+  background-color: #ff0000;
+  transform-origin: bottom;
+}
+
+.center {
+  position: absolute;
+  z-index: 4;
+  height: 10px;
+  width: 10px;
+  margin: 118px 118px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.numeric {
+  margin-top: 32px;
+  font-family: sans-serif;
+  font-size: 64px;
+}
